@@ -1,0 +1,59 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_JTf8QM": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_dzGip8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact Us",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dzGip8"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/restaurant-3513457_1280_1.jpg",
+        "image_overlay_opacity": 50,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "custom_css": [
+        "h2 {text-align: center;}",
+        "button {width: 100%;}"
+      ],
+      "settings": {
+        "heading": "Use form below to contact us",
+        "heading_size": "h2",
+        "color_scheme": "background-1",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_JTf8QM",
+    "form"
+  ]
+}

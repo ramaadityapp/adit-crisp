@@ -1,0 +1,195 @@
+{
+  "sections": {
+    "6a3bb789-ce10-45f5-ae67-e2063ef8c76b": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Store Main Title",
+            "heading_size": "h0"
+          }
+        },
+        "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-1": {
+          "type": "text",
+          "settings": {
+            "text": "This is subtitle short description",
+            "text_style": "subtitle"
+          }
+        },
+        "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop products",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-0",
+        "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-1",
+        "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-2"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/radoslav-bali-ca3d4FYDf84-unsplash.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "<strong>All Products<\/strong>",
+        "heading_size": "h1",
+        "description": "<p>Se our collections below<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "automated-collection",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "f1552b18-6017-4231-810d-74e61da22c37": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Stay hydrated",
+            "heading_size": "h1"
+          }
+        },
+        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Try our wax subscription so you can fly high, but never dry.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get waxy now",
+            "button_link": "shopify:\/\/products\/selling-plans-ski-wax"
+          }
+        }
+      },
+      "block_order": [
+        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-0",
+        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-1",
+        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/theme_cover_image.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_with_text_WXCGmC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_BdaRQM": {
+          "type": "heading",
+          "settings": {
+            "heading": "My Favorite Board",
+            "heading_size": "h1"
+          }
+        },
+        "text_LkFY3K": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"I can't say enough good things about this snowboard! From the moment I strapped in, I felt like I was floating on clouds. It provided the perfect balance of stability and agility. This board has exceeded all my expectations, and I can't wait to hit the slopes again!\" - Jeff from Albany<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "button_G3w8Nw": {
+          "type": "button",
+          "settings": {
+            "button_label": "Check it out!",
+            "button_link": "shopify:\/\/products\/the-collection-snowboard-liquid"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BdaRQM",
+        "text_LkFY3K",
+        "button_G3w8Nw"
+      ],
+      "custom_css": [
+        "p {color: #000;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 80
+      }
+    },
+    "custom_youtube_section_wD9LUt": {
+      "type": "custom-youtube-section",
+      "settings": {
+        "custom_youtube_video_title": "What type of Snowboard should you buy?",
+        "custom_youtube_video_title_alignment": "left",
+        "custom_youtube_video_title_size": 40,
+        "custom_youtube_video_title_margin_bottom": 35,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=I9t_ez_utno",
+        "custom_youtube_section_padding_top": 60,
+        "custom_youtube_section_padding_bottom": 0,
+        "color_scheme": "background-2"
+      }
+    }
+  },
+  "order": [
+    "6a3bb789-ce10-45f5-ae67-e2063ef8c76b",
+    "featured_collection",
+    "f1552b18-6017-4231-810d-74e61da22c37",
+    "image_with_text_WXCGmC",
+    "custom_youtube_section_wD9LUt"
+  ]
+}

@@ -1,0 +1,159 @@
+<div class="custom-youtube-section color-{{ section.settings.color_scheme }} gradient">
+  <div class="custom-youtube-title page-width">
+    <h2> {{ section.settings.custom_youtube_video_title }} </h2>
+  </div>
+  <div class="custom-youtube-video">
+    <iframe src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; 
+    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</div>
+
+{%- style -%}
+  .custom-youtube-section{
+    padding-top:{{ section.settings.custom_youtube_section_padding_top }}px;
+    padding-bottom:{{ section.settings.custom_youtube_section_padding_bottom }}px;
+  }
+  .custom-youtube-title h2{
+    font-size: {{ section.settings.custom_youtube_video_title_size }}px;
+    text-align:{{ section.settings.custom_youtube_video_title_alignment }};
+    margin-top:0px;
+    margin-bottom:{{ section.settings.custom_youtube_video_title_margin_bottom }}px;
+  }
+  .custom-youtube-video{
+    position:relative;
+    width:100%;
+    padding-bottom:56.25%;
+  }
+  .custom-youtube-video iframe{
+    position:absolute;
+    width:100%;
+    height:100%;
+  }
+{%- endstyle-%}
+
+{% schema %}
+  {
+    "name": "Custom Youtube Video",
+    "settings": [
+      {
+        "id": "custom_youtube_video_title",
+        "type": "text",
+        "label": "Title",
+        "default": "Title"
+      },
+      {
+        "type": "select",
+        "id": "custom_youtube_video_title_alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+      ],
+        "default": "left",
+        "label": "Title alignment"
+      },
+      {
+        "type": "range",
+        "id": "custom_youtube_video_title_size",
+        "default": 32,
+        "label": "Title size",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "custom_youtube_video_title_margin_bottom",
+        "default": 30,
+        "label": "Title margin bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "video_url",
+        "id": "video_url",
+        "accept": ["youtube"],
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "label": "Youtube video URL",
+        "info":"Youtube video preview"
+      },
+      {
+        "type":"header",
+        "content":"Section padding"
+      },
+      {
+        "type": "range",
+        "id": "custom_youtube_section_padding_top",
+        "default": 60,
+        "label": "Padding top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+         "id": "custom_youtube_section_padding_bottom",
+        "default": 60,
+        "label": "Padding bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type":"header",
+        "content":"Section color"
+      },
+      {
+        "type": "select",
+        "id": "color_scheme",
+        "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Youtube Video",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}
