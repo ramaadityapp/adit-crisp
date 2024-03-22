@@ -197,6 +197,22 @@
             {%- endif -%}
 
             {% render 'price', product: card_product, price_class: '' %}
+
+            {%- if card_product.metafields.custom.availability_information != null -%}
+              {%- assign card_product_availability_date = card_product.metafields.custom.availability_information | date: '%B %d, %Y' -%}
+              {%- assign today_date = 'now' | date: '%B %d, %Y' -%}
+              {%- assign day_tomorrow = 1 | times: 24 | times: 60 | times: 60 -%}
+              {%- assign tomorrow_date = 'now' | date: '%s' | plus: day_tomorrow | date: '%B %d, %Y' -%}
+              <div class="product__availability-date custom-card-elements">
+                <p>Available: <span class="product-availibility-date-text">
+                {%- if card_product_availability_date == today_date -%}Today
+                {%- elsif card_product_availability_date < today_date -%}Now
+                {%- elsif card_product_availability_date == tomorrow_date  -%}Tomorrow
+                {%- else -%} {{ card_product_availability_date }}
+                {%- endif -%}
+              </span></p>
+              </div>
+            {%- endif -%}
           </div>
         </div>
         {%- if show_quick_add -%}
@@ -380,3 +396,9 @@
     </div>
   </div>
 {%- endif -%}
+
+{% style %}
+.product__availability-date.custom-card-elements p{
+  margin:0px;
+}
+{%- endstyle-%}
