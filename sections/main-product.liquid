@@ -129,6 +129,21 @@
                   {%- endif -%}
                 </div>
               {%- endif -%}
+              {%- if product.metafields.custom.availability_information != null -%}
+                {%- assign product_availability_date = product.metafields.custom.availability_information | date: '%B %d, %Y' -%}
+                {%- assign today_date = 'now' | date: '%B %d, %Y' -%}
+                {%- assign day_tomorrow = 1 | times: 24 | times: 60 | times: 60 -%}
+                {%- assign tomorrow_date = 'now' | date: '%s' | plus: day_tomorrow | date: '%B %d, %Y' -%}
+                <div class="product__availability-date">
+                  <p>Available: <span class="product-availibility-date-text">
+                  {%- if product_availability_date == today_date -%}Today
+                  {%- elsif product_availability_date < today_date -%}Now
+                  {%- elsif product_availability_date == tomorrow_date  -%}Tomorrow
+                  {%- else -%} {{ product_availability_date }}
+                  {%- endif -%}
+                </span></p>
+                </div>
+              {%- endif -%}
               <div {{ block.shopify_attributes }}>
                 {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
                 {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
